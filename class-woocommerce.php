@@ -1,15 +1,12 @@
 <?php
-/**
- * Compatibility Plugin Name: WooCommerce
- * Compatibility Plugin URI: https://wordpress.org/plugins/woocommerce/
- *
- * Compatibility Description: Ensures compatibility with WooCommerce.
- *
- */
 
-namespace WPSL\WooCommerce;
+namespace SLCA\WooCommerce;
 
 use wpCloud\StatelessMedia\Compatibility;
+
+/**
+ * Class WooCommerce
+ */
 
 class WooCommerce extends Compatibility {
   protected $id = 'woocommerce';
@@ -35,7 +32,9 @@ class WooCommerce extends Compatibility {
   public function skip_cache_busting( $return, $filename ) {
     $backtrace = debug_backtrace( DEBUG_BACKTRACE_IGNORE_ARGS, 8 );
 
-    if( strpos( $backtrace[ 7 ][ 'class' ], 'WC_CSV_Exporter' ) !== false ) {
+    $check = $backtrace && isset( $backtrace[7] ) && isset( $backtrace[7]['class'] ) ? $backtrace[7]['class'] : '';
+
+    if( strpos( $check, 'WC_CSV_Exporter' ) !== false ) {
       return $filename;
     }
     return $return;
