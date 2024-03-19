@@ -1,6 +1,6 @@
 <?php
 
-namespace WPSL\WooCommerce;
+namespace SLCA\WooCommerce;
 
 use PHPUnit\Framework\TestCase;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;

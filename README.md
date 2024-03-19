@@ -8,7 +8,7 @@ Provides compatibility between the [WooCommerce](https://wordpress.org/plugins/w
 
 ### Notes
 
-* Tested with WooCommerce plugin version 8.3.1
+* Tested with WooCommerce plugin version 8.6.1
 
 ### Support, Feedback, & Contribute
 

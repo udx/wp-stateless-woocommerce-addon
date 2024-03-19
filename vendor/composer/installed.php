@@ -3,7 +3,7 @@
         'name' => 'udx/wp-stateless-woocommerce-addon',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f94853d0a88ae8e4a322fb10ee160cd7589b3f31',
+        'reference' => 'bf47479216f53a8afb6a947a230efea650fb3ba9',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'udx/wp-stateless-woocommerce-addon' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f94853d0a88ae8e4a322fb10ee160cd7589b3f31',
+            'reference' => 'bf47479216f53a8afb6a947a230efea650fb3ba9',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

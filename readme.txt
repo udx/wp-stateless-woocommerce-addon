@@ -5,7 +5,7 @@ Tags: woocommerce, ecommerce, online store, google, google cloud, google cloud s
 License: GPLv2 or later
 Requires PHP: 8.0
 Requires at least: 5.0
-Tested up to: 6.4.1
+Tested up to: 6.4.3
 Stable tag: 0.0.1
 
 Provides compatibility between the WooCommerce and the WP-Stateless plugins.
@@ -20,7 +20,7 @@ Provides compatibility between the [WooCommerce](https://wordpress.org/plugins/w
 
 = Notes =
 
-* Tested with WooCommerce plugin version 8.3.1
+* Tested with WooCommerce plugin version 8.6.1
 
 = Support, Feedback, & Contribute =
 
