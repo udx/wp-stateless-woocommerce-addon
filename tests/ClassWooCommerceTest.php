@@ -38,6 +38,15 @@ class ClassWooCommerceTest extends TestCase {
     $wooCommerce->module_init([]);
 
     self::assertNotFalse( has_filter('stateless_skip_cache_busting', [ $wooCommerce, 'skip_cache_busting' ]) );
+    self::assertNotFalse( has_filter('upload_dir', [ $wooCommerce, 'filter_upload_dir' ]) );
+  }
+
+  public function testShouldCountHooks() {
+    $wooCommerce = new WooCommerce();
+
+    Functions\expect('add_filter')->times(2);
+
+    $wooCommerce->module_init([]);
   }
 
   public function testShouldSkipCacheBusting() {
